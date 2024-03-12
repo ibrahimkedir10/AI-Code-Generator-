@@ -1,14 +1,16 @@
 
 function Code() {
     return (
-      <div className="App">
-        <header className="App-header">
-         
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          
-        </header>
+      <div className="code"> 
+        <div className="buttons">
+            <div className="first button"></div>
+            <div className="second button"></div>
+            <div className="third button"></div>
+            
+        </div>  
+         <div className="code-output">
+            <p></p>
+        </div> 
       </div>
     );
   }

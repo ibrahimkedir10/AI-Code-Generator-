@@ -1,15 +1,14 @@
-
+import SingleMessage from "./SingleMessage";
 
 function MultipleMessages() {
     return (
-      <div className="App">
-        <header className="App-header">
-         
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          
-        </header>
+      <div className="MultipleMessages">
+        <SingleMessage/>
+        <SingleMessage/>
+        <SingleMessage/>
+        <SingleMessage/>
+        <SingleMessage/>
+        <SingleMessage/>
       </div>
     );
   }

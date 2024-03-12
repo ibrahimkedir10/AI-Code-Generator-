@@ -1,15 +1,17 @@
-
+import MultipleMessages from "./Components/MultipleMessages";
+import SingleMessage from "./Components/SingleMessage";
+import Code from "./Components/Code";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        
-      </header>
+      <MultipleMessages/>
+      <input/>
+      <Code/>
+      <div className="button-container">
+        <button id="get-query">Query</button>
+        <button id="clear-chat">Clear Chat</button>
+      </div>
     </div>
   );
 }
