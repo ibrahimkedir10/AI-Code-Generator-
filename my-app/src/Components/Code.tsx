@@ -1,5 +1,8 @@
 
-function Code() {
+interface CodeDisplayProps{
+    text: string
+}
+function Code({text}:CodeDisplayProps ) {
     return (
       <div className="code"> 
         <div className="buttons">

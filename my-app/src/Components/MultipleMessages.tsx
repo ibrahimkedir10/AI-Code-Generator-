@@ -1,14 +1,17 @@
 import SingleMessage from "./SingleMessage";
 
-function MultipleMessages() {
+interface UserMessage{
+    role: string,
+    content: string
+}
+interface MessagesDisplayProps{
+    userMessages: UserMessage[]
+}
+function MultipleMessages({userMessages}: MessagesDisplayProps) {
     return (
       <div className="MultipleMessages">
-        <SingleMessage/>
-        <SingleMessage/>
-        <SingleMessage/>
-        <SingleMessage/>
-        <SingleMessage/>
-        <SingleMessage/>
+       {userMessages.map((userMessage, _index) => <SingleMessage key={_index} message={userMessage} />)}
+
       </div>
     );
   }
