@@ -24,7 +24,7 @@ function App() {
         })
       }
 
-      const response = await fetch("http://localhost:3001/completions", options);
+      const response = await fetch("http://localhost:3000/completions", options);
       const data: ChatData = await response.json();
       console.log(data);
       const userMessage: ChatData= {
